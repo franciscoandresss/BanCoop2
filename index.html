@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- w-6/12: tamaño del contenedor principal, mx-auto: centra -->
+    <div  class = "w-full md:w-10/12 lg:w-8/12 mx-auto">
+        <header  class ="rounded-t-lg bg-gray-300 pt-4 pb-2">
+            <div class="flex mx-auto w-11/12">
+                <div class="px-16">
+                    <h2 class="text-7xl font-bold">
+                        BANCOOP
+                    </h2>
+                    <h2 class="text-2xl font-semibold">
+                        Te ayuda alcanzar tus metas
+                    </h2>
+                </div>
+                <div  class="mx-auto">
+                    <img class="w-40" src="img/logo.png" >
+                </div>
+            </div>
+		</header>
+        <!-- rounded-b-lg: redondeo las esquinas abajo
+             py-4: padin en el eje y, divide-x: linea entre las cajas, gap-2:separa las cajas -->
+        <nav class="grid grid-cols-2 gap-2 md:grid-cols-4 bg-yellow-500	rounded-b-lg py-4 divide-x">
+			<a class="text-white text-center" href="#">.Creditos.</a>
+			<a class="text-white text-center" href="#">.Leasing.</a>
+			<a class="text-white text-center" href="#">.Ahorros.</a>
+			<a class="text-white text-center" href="#">.Servicio al cliente.</a>
+		</nav>
+
+        <div class="grid grid-cols-3 gap-4 mt-3">
+
+            <div>
+                <div class="">
+                    <h2 class="font-semibold text-white bg-black rounded-t-lg py-2 pl-4">
+                        INGRESA A TU CUENTA
+                    </h2>
+                     <!-- form: etiqueta para formulario -->
+                    <form class="grid grid-cols-7 gap-y-3 text-black bg-gray-300 py-6 px-6"> 
+                    
+                        <div class="col-span-2 font-semibold">
+                            <label>Cuenta:</label>
+                        </div>
+                        <div class="col-span-5">
+                            <input name="Mascota" type="text" class="w-full" placeholder="   Numero de cuenta">
+                        </div>
+
+                        <div class="col-span-2 font-semibold">
+                            <label>Tipo:</label>
+                        </div>
+                        <div class="col-span-5">
+                            <input name="Mascota" type="text" class="w-full" placeholder="">
+                        </div>
+
+                        <div class="col-span-2 font-semibold">
+                            <label>Clave:</label>
+                        </div>
+                        <div class="col-span-5">
+                            <input name="Mascota" type="text" class="w-full" placeholder="   Ingrese Nombre">
+                        </div>
+
+                        <div class="col-span-7 text-black mt-3 mx-auto">
+                            <button name="button" class="rounded-lg bg-yellow-400 border-2 border-black px-5">
+                                VALIDAR CITA
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-3">
+                    <h2 class="italic font-semibold text-yellow-300 text-center bg-gray-900 py-3">
+                        TRANSACCIONES
+                    </h2>
+                    <div class="bg-gray-800">
+                        <h2 class="font-semibold text-gray-300	text-center border-b-2 py-3 mx-4">
+                            Banca personal
+                        </h2>
+                    </div>
+                    <div class="bg-gray-800">
+                        <h2 class="font-semibold text-gray-300	text-center border-b-2 py-3 mx-4">
+                            Banca empresarial
+                        </h2>
+                    </div>
+                    <div class="bg-gray-800">
+                        <h2 class="font-semibold text-gray-300	text-center border-b-2 py-3 mx-4">
+                            Banca seguros
+                        </h2>
+                    </div>
+                    <div class="bg-gray-800">
+                        <h2 class="font-semibold text-gray-300	text-center py-3 mx-4">
+                            Pago de facturas
+                        </h2>
+                    </div>
+
+                    <h2 class="italic font-semibold text-yellow-300 text-center bg-gray-900 py-3">
+                        TARJETAS DE CREDITOS
+                    </h2>
+                    <div class="bg-gray-800">
+                        <h2 class="font-semibold text-gray-300	text-center border-b-2 py-3 mx-4">
+                            Credi Visa
+                        </h2>
+                    </div>
+                    <div class="bg-gray-800">
+                        <h2 class="font-semibold text-gray-300	text-center py-3 mx-4">
+                            Credi Mastercard
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-2 grid grid-cols-2 gap-4 rounded-lg overflow-hidden">
+                <div class="bg-gray-200">
+                    <h2 class="text-xs text-white bg-gray-800 text-center py-2 ">
+                        SOLICITA NUESTROS PRODUCTOS
+                    </h2>
+                    <div class="mt-4 mb-2">
+                        <img class="mx-auto w-40" src="img/card.png" >
+                    </div>
+                    <div class="text-xs px-3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugiat ut quia iure hic quos iste
+                            <br>
+                            sit eligendi. Suscipit, debitis animi?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200">
+                    <h2 class="text-xs text-white bg-gray-800 text-center py-2 ">
+                        AHORRO ESTUDIANTIL
+                    </h2>
+                    <div class="mt-4 mb-2">
+                        <img class="mx-auto w-40" src="img/estu.png" >
+                    </div>
+                    <div class="text-xs px-3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugiat ut quia iure hic quos iste
+                            <br>
+                            sit eligendi. Suscipit, debitis animi?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200">
+                    <h2 class="text-xs text-white bg-gray-800 text-center py-2 ">
+                        CREDITO VEHICULOS
+                    </h2>
+                    <div class="mt-4 mb-2">
+                        <img class="mx-auto w-40" src="img/carro.png" >
+                    </div>
+                    <div class="text-xs px-3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugiat ut quia iure hic quos iste
+                            <br>
+                            sit eligendi. Suscipit, debitis animi?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200">
+                    <h2 class="text-xs text-white bg-gray-800 text-center py-2 ">
+                        CREDITO HIPOTECARIO
+                    </h2>
+                    <div class="mt-4 mb-2">
+                        <img class="mx-auto w-40" src="img/casa.png" >
+                    </div>
+                    <div class="text-xs px-3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugiat ut quia iure hic quos iste
+                            <br>
+                            sit eligendi. Suscipit, debitis animi?
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer  class = "text-center text-white bg-green-700 mt-3 rounded-b-lg py-3">
+			<h3>Contactenos</h3>
+            <h3>Linea gratuita 01800-000</h3>
+            <h3>Bancoe ntidad - Todos los derechos</h3>
+		</footer>
+</body>
+</html>
